@@ -1,0 +1,102 @@
+package com.example.appmke.backend
+
+import com.example.appmke.backend.data.Cards
+import com.example.appmke.backend.data.Owner
+import com.example.appmke.backend.data.Promotion
+
+class ProductsLists {
+        val list = mutableListOf(
+            Products(
+                1,
+                "Campera urbana",
+                "Urban",
+                25.99,
+                20.00,
+                "%20",
+                "$",
+                false,
+                Promotion(15.00, 6, Cards("columbia","visa")),
+                "21/02/23",
+                false,
+                false,
+                Owner("luis", "flexiplus"),
+                43,
+                4.00,
+                43.00,
+                "La Campera Urbana Lotto Hs May Hombre es una prenda moderna y versátil para los hombres que buscan estilo y comodidad en su vestimenta diaria.",
+                "20%",
+                4.99,
+                "new york",
+                "https://www.stockcenter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw630c4b07/products/LONIFW230473/LONIFW230473-1.JPG"
+            ),
+            Products(
+                2,
+                "Remera cuello en v",
+                "Fashion",
+                39.99,
+                20.00,
+                "%20",
+                "$",
+                false,
+                Promotion(15.00, 6,Cards("Columbia","visa")),
+                "21/02/23",
+                false,
+                false,
+                Owner("luis", "flexiplus"),
+                43,
+                4.00,
+                43.00,
+                "Remera básica lisa de jersey de algodón 24/1. Con escote en V.",
+                "20%",
+                4.99,
+                "new york",
+                "https://forever21.com.ar/media/catalog/product/cache/06cfaa02c67cf3a5c3c05d775284c631/r/e/remera-hombre-basica-escote-v-forever21-r2m091002-100_1__1_3.jpg"
+            ),
+            Products(
+                3,
+                "Remera cuello redondo",
+                "SunDresses",
+                29.99,
+                20.00,
+                "%20",
+                "$",
+                false,
+                Promotion(15.00, 6, Cards("Columbia","Visa")),
+                "21/02/23",
+                false,
+                false,
+                Owner("Luis", "flexiplus"),
+                43,
+                4.00,
+                43.00,
+                "Remera básica lisa de jersey de algodón 24/1. Con cuello redondo",
+                "20%",
+                4.99,
+                "new york",
+                "https://forever21.com.ar/media/catalog/product/cache/06cfaa02c67cf3a5c3c05d775284c631/r/e/remera-hombre-basica-escote-v-forever21-r2m091002-100_1__1_3.jpg"
+            ),
+            Products(
+                4,
+                "Buzo cuello redondo",
+                "UrbanRider",
+                79.99,
+                20.00,
+                "%20",
+                "$",
+                false,
+                Promotion(15.00, 6, Cards("Columbia","Visa")),
+                "21/02/23",
+                false,
+                false,
+                Owner("Luis", "flexiplus"),
+                43,
+                4.00,
+                43.00,
+                "Buzo liso de jersey de algodón 24/1. Con escote en V.",
+                "20%",
+                4.99,
+                "new york",
+                "https://deliverind.com.ar/wp-content/uploads/2022/10/BUZO-OVERSIZE-RUSTICO-22-PORTADA-10-scaled.jpg.webp"
+            )
+        )
+}
