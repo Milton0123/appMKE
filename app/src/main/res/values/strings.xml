@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">appMKE</string>
+    <string name="home_tv_dollar_sign">$</string>
+    <string name="home_tv_offers_percent">% OFF</string>
 </resources>
