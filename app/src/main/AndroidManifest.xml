@@ -14,10 +14,10 @@
         android:theme="@style/Theme.AppMKE"
         tools:targetApi="31">
         <activity
-            android:name=".DescriptionActivity"
+            android:name=".ui.DescriptionActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

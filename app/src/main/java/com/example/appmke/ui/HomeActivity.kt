@@ -1,14 +1,15 @@
-package com.example.appmke
+package com.example.appmke.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.appmke.databinding.ActivityDescriptionBinding
+import com.example.appmke.databinding.ActivityHomeBinding
 
-class DescriptionActivity : AppCompatActivity() {
-    lateinit var binding: ActivityDescriptionBinding
+class HomeActivity : AppCompatActivity() {
+    lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDescriptionBinding.inflate(layoutInflater)
+        binding= ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }
