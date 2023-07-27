@@ -17,7 +17,11 @@
             android:name=".ui.DescriptionActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name=".ui.MainActivity"
+=======
+            android:name=".ui.HomeActivity"
+>>>>>>> 4d3e4b5fff1bdaaedf77986683e9ed28514c2386
             android:exported="false" />
         <activity
             android:name=".ui.HomeActivity"
