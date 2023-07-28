@@ -330,7 +330,7 @@ object ProductsLists {
             "15%",
             200.00,
             "caballito",
-            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpintecord.com.ar%2Fshop%2Falbalatex-latex-lavable-interior-blanco-mate-8541&psig=AOvVaw0HZ0uK1pE_tBjSyCirDA84&ust=1690374618564000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCODXu6fuqYADFQAAAAAdAAAAABAI"
+            "https://pintecord.com.ar/web/image/product.product/31749/image_1024/%5B249467%5D%20Albalatex%20Latex%20Lavable%20Interior%20Blanco%20Mate%20%281%20L%29?unique=de43ff0"
         ),
         Products(
             12,
@@ -363,7 +363,7 @@ object ProductsLists {
             "10%",
             0.00,
             "tokyo",
-            "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.samsung.com%2Fis%2Fimage%2Fsamsung%2Fp6pim%2Far%2Fsm-x200nzamaro%2Fgallery%2Far-galaxy-a8-sm-x200-sm-x200nzamaro-531066536%3F%24650_519_PNG%24&tbnid=vQGsvJCTwO1AwM&vet=12ahUKEwjUt9nh7KiAAxXlrpUCHSnRAhcQMygBegUIARDvAg..i&imgrefurl=https%3A%2F%2Fwww.samsung.com%2Far%2Ftablets%2Fgalaxy-tab-a%2Fgalaxy-tab-a8-wifi-dark-gray-64gb-sm-x200nzamaro%2F&docid=QIoVw5tKuyV0JM&w=650&h=519&q=tablet%20samsung&ved=2ahUKEwjUt9nh7KiAAxXlrpUCHSnRAhcQMygBegUIARDvAg"
+            "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-x200nzamaro/gallery/ar-galaxy-a8-sm-x200-sm-x200nzamaro-531066536?\$650_519_PNG"
         ),
 
 

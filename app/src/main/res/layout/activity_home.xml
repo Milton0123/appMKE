@@ -37,6 +37,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_products_home"
         android:layout_width="300dp"
         android:layout_height="0dp"
         android:layout_marginStart="55dp"

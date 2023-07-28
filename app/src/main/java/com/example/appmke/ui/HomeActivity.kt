@@ -2,25 +2,31 @@ package com.example.appmke.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.viewmodel.ViewModelFactoryDsl
 import com.example.appmke.databinding.ActivityHomeBinding
 import com.example.appmke.backend.MyViewModel
+import com.example.appmke.backend.ProductsAdapter
 import com.example.appmke.backend.Repository
 
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding : ActivityHomeBinding
     private lateinit var viewModel: MyViewModel
+    val miRepository = Repository()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        action()
     }
 
-    private fun getViewModel() {
-       // viewModel =
-       //     ViewModelFactory(myRepo = Repository()).create(MyViewModel::class.java)
+    fun action(){
+        initRecyclerView()
+    }
+
+    fun initRecyclerView(){
+        val adapter = ProductsAdapter(miRepository.getListProducts())
+        binding.rvProductsHome.adapter = adapter
     }
 
 
