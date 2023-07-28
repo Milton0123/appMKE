@@ -6,7 +6,6 @@ import androidx.lifecycle.viewmodel.ViewModelFactoryDsl
 import com.example.appmke.databinding.ActivityHomeBinding
 import com.example.appmke.backend.MyViewModel
 import com.example.appmke.backend.Repository
-import com.example.appmke.backend.ViewModelFactory
 
 
 class HomeActivity : AppCompatActivity() {
