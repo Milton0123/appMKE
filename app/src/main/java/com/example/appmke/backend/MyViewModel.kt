@@ -7,10 +7,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
-class MyViewModel: ViewModel() {
+class MyViewModel(val myRepository:Repository): ViewModel() {
     val data = MutableLiveData<MutableList<Products>>()
 
-    val myRepository = Repository()
+//    val myRepository = Repository()
 
 
     fun requestProduct(products: Products) {
