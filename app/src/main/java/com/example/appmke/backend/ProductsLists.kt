@@ -364,8 +364,8 @@ object ProductsLists {
             0.00,
             "tokyo",
             "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.samsung.com%2Fis%2Fimage%2Fsamsung%2Fp6pim%2Far%2Fsm-x200nzamaro%2Fgallery%2Far-galaxy-a8-sm-x200-sm-x200nzamaro-531066536%3F%24650_519_PNG%24&tbnid=vQGsvJCTwO1AwM&vet=12ahUKEwjUt9nh7KiAAxXlrpUCHSnRAhcQMygBegUIARDvAg..i&imgrefurl=https%3A%2F%2Fwww.samsung.com%2Far%2Ftablets%2Fgalaxy-tab-a%2Fgalaxy-tab-a8-wifi-dark-gray-64gb-sm-x200nzamaro%2F&docid=QIoVw5tKuyV0JM&w=650&h=519&q=tablet%20samsung&ved=2ahUKEwjUt9nh7KiAAxXlrpUCHSnRAhcQMygBegUIARDvAg"
+        ),
+
+
         )
-
-
-    )
 }
