@@ -10,8 +10,8 @@ import com.example.appmke.backend.Repository
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding : ActivityHomeBinding
+
     private lateinit var viewModel: MyViewModel
-    val miRepository = Repository()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     fun initRecyclerView(){
-        val adapter = ProductsAdapter(miRepository.getListProducts())
+        val adapter = ProductsAdapter(viewModel.getMyListProduct())
         binding.rvProductsHome.adapter = adapter
     }
 

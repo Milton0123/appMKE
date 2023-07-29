@@ -7,8 +7,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
-class MyViewModel(val myRepository:Repository): ViewModel() {
-    val data = MutableLiveData<MutableList<Products>>()
+class MyViewModel(private val myRepository:Repository): ViewModel() {
+   private val data = MutableLiveData<MutableList<Products>>()
 
 //    val myRepository = Repository()
 
@@ -18,6 +18,10 @@ class MyViewModel(val myRepository:Repository): ViewModel() {
             val result= myRepository.getListProducts()
             data.postValue(result)
         }
+    }
+
+    fun getMyListProduct():MutableList<Products>{
+       return myRepository.getListProducts()
     }
 
 
