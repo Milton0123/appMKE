@@ -28,14 +28,14 @@
 
             <ImageView
                 android:id="@+id/ln_line_description"
-                android:layout_width="40"
+                android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/ic_navi_drawer" />
 
             <ImageView
                 android:id="@+id/iv_favorite_heart_description"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="150dp"
                 android:layout_weight="1"
@@ -45,7 +45,7 @@
 
             <ImageView
                 android:id="@+id/iv_search_description"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="25dp"
                 android:layout_margin="15dp"
                 android:layout_weight="1"
@@ -53,10 +53,9 @@
 
             <ImageView
                 android:id="@+id/iv_shopp_description"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_height="25dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginBotton="15dp"
                 android:layout_weight="1"
                 android:background="@drawable/ic_shopping_cart_outline" />
 
@@ -71,7 +70,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="30"
+                android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/ic_location" />
@@ -212,7 +211,6 @@
         android:textColor="@color/green_mp"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/tv_price_description"
-        app:layout_constraintStart_toEndtOf="@+id/tv_price_description"
         app:layout_constraintTop_toBottomOf="@id/iv_image_description" />
 
     <TextView
@@ -225,8 +223,7 @@
         android:textColor="@color/blue_light_mp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintStart_toEndtOf="@+id/tv_price_description"
-        app:layout_constraintTop_toBottomOf="@id/tv_price_description" />
+         app:layout_constraintTop_toBottomOf="@id/tv_price_description" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
