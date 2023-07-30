@@ -1,9 +1,9 @@
 package com.example.appmke.backend
 
-class Repository  {
+class Repository {
 
 
-    suspend fun getListProducts(): MutableList<Products>{
-      return ProductsLists.list
+    fun getListProducts(): MutableList<Products> {
+        return ProductsLists.list
     }
 }
