@@ -41,6 +41,7 @@ class HomeActivity : AppCompatActivity() {
         binding.svProductsHome.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
                 val newList = mutableListOf<Products>()
+                viewModel.getMyListProduct().forEach{
                     if(it.name.contains(query!!)){
                         newList.add(it)
                     }
@@ -52,5 +53,6 @@ class HomeActivity : AppCompatActivity() {
             override fun onQueryTextChange(newText: String?): Boolean {
                 return false
             }
-        }
+        })
     }
+}
