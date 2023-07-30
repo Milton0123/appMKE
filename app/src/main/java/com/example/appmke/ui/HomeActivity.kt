@@ -1,5 +1,6 @@
 package com.example.appmke.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.SearchView
@@ -10,6 +11,7 @@ import com.example.appmke.backend.Products
 import com.example.appmke.backend.ProductsAdapter
 import com.example.appmke.backend.Repository
 import com.example.appmke.backend.ViewModelFactory
+import com.example.appmke.ui.Constants.miItem
 
 
 class HomeActivity : AppCompatActivity() {
@@ -34,7 +36,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     fun initRecyclerView(listRv : List<Products>) {
-        val adapter = ProductsAdapter(listRv)
+        val adapter = ProductsAdapter(listRv, clickItem = {goToDetails.invoke(it)})
         binding.rvProductsHome.adapter = adapter
     }
 
@@ -57,4 +59,13 @@ class HomeActivity : AppCompatActivity() {
         })
     }
 
+    val goToDetails = fun (item : Products){
+        val intent = Intent(this, DescriptionActivity::class.java)
+        miItem = item
+        startActivity(intent)
+
+    }
+}
+object Constants{
+    var miItem : Products? = null
 }
