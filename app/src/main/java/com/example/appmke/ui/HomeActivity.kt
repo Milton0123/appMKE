@@ -2,6 +2,7 @@ package com.example.appmke.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import com.example.appmke.databinding.ActivityHomeBinding
@@ -51,7 +52,13 @@ class HomeActivity : AppCompatActivity() {
                         newList.add(it)
                     }
                 }
-                initRecyclerView(newList)
+
+                if(newList.isNotEmpty()) {
+                    initRecyclerView(newList)
+                    binding.inErrorHome.root.visibility = View.GONE
+                }else{
+                    binding.inErrorHome.root.visibility = View.VISIBLE
+                }
                 return false
             }
         })

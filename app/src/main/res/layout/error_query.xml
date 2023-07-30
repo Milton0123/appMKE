@@ -45,7 +45,7 @@
         android:id="@+id/iv_error_search_error_item"
         android:layout_width="160dp"
         android:layout_height="150dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/ic_search_circle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
