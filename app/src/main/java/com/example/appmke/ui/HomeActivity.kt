@@ -59,12 +59,15 @@ class HomeActivity : AppCompatActivity() {
         })
     }
 
-    val goToDetails = fun (item : Products){
+
+    private val goToDetails = fun (item : Products){
         val intent = Intent(this, DescriptionActivity::class.java)
         miItem = item
         startActivity(intent)
 
     }
+
+
 }
 object Constants{
     var miItem : Products? = null
