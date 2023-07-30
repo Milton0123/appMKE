@@ -23,52 +23,53 @@
             <ImageView
                 android:layout_width="50"
                 android:layout_height="50dp"
-                android:background="@drawable/ic_navi_drawer"/>
+                android:background="@drawable/ic_navi_drawer" />
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/sv_products_home"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:background="@color/white" />
+                android:layout_marginStart="20dp"
+                android:background="@drawable/search_radius" />
 
             <ImageView
                 android:layout_width="50"
                 android:layout_height="50dp"
                 android:layout_marginStart="10dp"
-                android:background="@drawable/ic_shopping_cart_outline"/>
+                android:background="@drawable/ic_shopping_cart_outline" />
+
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/yellow_mp"/>
+            android:background="@color/yellow_mp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/white"/>
+            android:background="@color/white" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/white"/>
+            android:background="@color/white" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_products_home"
         android:layout_width="300dp"
         android:layout_height="0dp"
-        android:layout_marginStart="55dp"
+        android:layout_marginStart="40dp"
         android:layout_weight="1"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_products" />
 
     <include
         android:id="@+id/in_error_home"
-        android:visibility="gone"
+        layout="@layout/error_query"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        layout="@layout/error_query"/>
+        android:visibility="gone" />
 
 </LinearLayout>
