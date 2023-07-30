@@ -2,8 +2,10 @@ package com.example.appmke.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
+import com.example.appmke.R
 import com.example.appmke.databinding.ActivityHomeBinding
 import com.example.appmke.backend.MyViewModel
 import com.example.appmke.backend.Products
@@ -31,6 +33,7 @@ class HomeActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this, viewModelFactory).get(MyViewModel::class.java)
         initRecyclerView(viewModel.getMyListProduct())
         searchProduct()
+        likedProduct()
     }
 
     fun initRecyclerView(listRv : List<Products>) {
@@ -55,6 +58,11 @@ class HomeActivity : AppCompatActivity() {
                 return false
             }
         })
+    }
+    fun likedProduct(){
+
+
+        }
     }
 
 }

@@ -1,8 +1,10 @@
 package com.example.appmke.backend
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appmke.R
 import com.example.appmke.databinding.ItemProductsBinding
@@ -28,6 +30,11 @@ class ProductHolder(view : View): RecyclerView.ViewHolder(view){
         Picasso.get().load(value.url).into(binding.ivImageHome)
         binding.tvDescriptionHome.text = value.description
         binding.tvPriceHome.text = value.price.toString()
+        binding.tvOffersPercentHome.text = value.offersPercent
+        binding.ivFavoriteHome.setImageResource(R.drawable.ic_heart)
+
     }
 
 }
+
+
