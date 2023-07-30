@@ -5,11 +5,228 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.DescriptionActivity">
+
+
     <LinearLayout
+        android:id="@+id/ln_menu_description"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
+        android:layout_height="250dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:background="@color/yellow_mp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ln_menu2_description"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ln_line_description"
+                android:layout_width="40"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_navi_drawer" />
+
+            <ImageView
+                android:id="@+id/iv_favorite_heart_description"
+                android:layout_width="0"
+                android:layout_height="25dp"
+                android:layout_marginStart="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_heart"
+                app:layout_constraintBottom_toBottomOf="@id/ln_menu2_description"
+                app:layout_constraintTop_toTopOf="@id/ln_menu2_description" />
+
+            <ImageView
+                android:id="@+id/iv_search_description"
+                android:layout_width="0"
+                android:layout_height="25dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_search" />
+
+            <ImageView
+                android:id="@+id/iv_shopp_description"
+                android:layout_width="0"
+                android:layout_height="25dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBotton="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_shopping_cart_outline" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="183dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tv_location_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="70dp"
+                android:text="location"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="300dp"
+                android:background="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New  |  +10mil vendidos"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/tv_star_a_description"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:id="@+id/tv_star_b_description"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:id="@+id/tv_star_c_description"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:id="@+id/tv_star_d_description"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:id="@+id/tv_star_e_description"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:id="@+id/tv_star_f_description"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:id="@+id/tv_star_g_description"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:id="@+id/tv_star_h_description"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_description"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:text="name"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+        </LinearLayout>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_image_description"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ln_menu_description"/>
+
+    <TextView
+        android:id="@+id/tv_price_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="precio"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_image_description"/>
+
+    <TextView
+        android:id="@+id/tv_offer_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:text="offer"
+        android:textColor="@color/green_mp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_price_description"
+        app:layout_constraintStart_toEndtOf="@+id/tv_price_description"
+        app:layout_constraintTop_toBottomOf="@id/iv_image_description" />
+
+    <TextView
+        android:id="@+id/tv_metod_buy_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:text="ver los medios de pago"
+        android:textColor="@color/blue_light_mp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndtOf="@+id/tv_price_description"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_description" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
