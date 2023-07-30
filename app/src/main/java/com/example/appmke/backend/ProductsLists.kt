@@ -365,7 +365,233 @@ object ProductsLists {
             "tokyo",
             "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-x200nzamaro/gallery/ar-galaxy-a8-sm-x200-sm-x200nzamaro-531066536?\$650_519_PNG"
         ),
-
-
-        )
+        Products(
+            13,
+            "Reloj de pulsera",
+            "Casio",
+            79.99,
+            69.99,
+            "%13",
+            "$",
+            true,
+            Promotion(
+                59.99,
+                6,
+                Cards(
+                    "mastercard",
+                    "visa"
+                )
+            ),
+            "20/06/23",
+            true,
+            true,
+            Owner(
+                "Roberto",
+                "time lover"
+            ),
+            60,
+            4.9,
+            80.00,
+            "Este elegante reloj de pulsera casio complementará tu look con estilo y precisión.",
+            "13%",
+            0.0,
+            "london",
+            "https://www.google.com/imgres?imgurl=https%3A%2F%2Favantjoyas.com%2Fwp-content%2Fuploads%2FAvant-Joyas-Reloj-Casio-A700WMG-9A.jpg&tbnid=pdwBK50WhCC8wM&vet=12ahUKEwjHxIDF7KiAAxXtp5UCHUCxDGIQMygOegUIARCjAw..i&imgrefurl=https%3A%2F%2Favantjoyas.com%2Fproducto%2Freloj-casio-a700wmg-9a%2F&docid=1IXjpbds1sJXjM&w=1000&h=1000&q=reloj%20casio&ved=2ahUKEwjHxIDF7KiAAxXtp5UCHUCxDGIQMygOegUIARCjAw"
+        ),
+        Products(
+            14,
+            "Escritorio PC",
+            "Paquito",
+            1000.0,
+            899.0,
+            "%10",
+            "$",
+            true,
+            Promotion(
+                799.0,
+                9,
+                Cards(
+                    "mastercard",
+                    "visa"
+                )
+            ),
+            "20/09/21",
+            false,
+            false,
+            Owner(
+                "Carlos",
+                "cartucho"
+            ),
+            19,
+            3.5,
+            1200.0,
+            "Lindo escritorio para poder trabajar desde casa o jugar en la compu",
+            "23%",
+            0.00,
+            "mar del plata",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXccLcHWKij6kauka3c_Wmjmy3sTsbz0Yl4zIRIZ58WscthS0JikgHKJ_5Mgd3TdoXzU&usqp=CAU"
+        ),
+        Products(
+            15,
+            "pintura",
+            "alba",
+            20.999,
+            18.99,
+            "%15",
+            "$",
+            true,
+            Promotion(
+                18.99,
+                5,
+                Cards(
+                    "mastercard",
+                    "visa"
+                )
+            ),
+            "20/06/23",
+            true,
+            true,
+            Owner(
+                "joaquin",
+                "full Painting"
+            ),
+            60,
+            4.9,
+            80.00,
+            "Este elegante reloj de pulsera casio complementará tu look con estilo y precisión.",
+            "13%",
+            0.00,
+            "london",
+            "https://www.google.com/imgres?imgurl=https%3A%2F%2Favantjoyas.com%2Fwp-content%2Fuploads%2FAvant-Joyas-Reloj-Casio-A700WMG-9A.jpg&tbnid=pdwBK50WhCC8wM&vet=12ahUKEwjHxIDF7KiAAxXtp5UCHUCxDGIQMygOegUIARCjAw..i&imgrefurl=https%3A%2F%2Favantjoyas.com%2Fproducto%2Freloj-casio-a700wmg-9a%2F&docid=1IXjpbds1sJXjM&w=1000&h=1000&q=reloj%20casio&ved=2ahUKEwjHxIDF7KiAAxXtp5UCHUCxDGIQMygOegUIARCjAw"
+        ),
+        Products(
+            16,
+            "parlantes",
+            "samsung",
+            45.99,
+            35.99,
+            "%19",
+            "$",
+            true,
+            Promotion(
+                42.99,
+                5,
+                Cards(
+                    "mastercard",
+                    "visa"
+                )
+            ),
+            "20/06/23",
+            true,
+            true,
+            Owner(
+                "benjamin",
+                "benjaMusic"
+            ),
+            120,
+            4.9,
+            30.00,
+            " parlantes de alta calidad de sonido efecto surround.",
+            "13%",
+            0.00,
+            "palermo",
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fnews.samsung.com%2Far%2Fsamsung-presenta-sus-nuevas-sound-tower-portatiles&psig=AOvVaw1GKoWRqSg8IzRENkQBWVe-&ust=1690375414252000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOClk6PxqYADFQAAAAAdAAAAABAF"
+        ),
+        Products(
+            17,
+            "colchón",
+            "belmo",
+            130.00,
+            125.99,
+            "%19",
+            "$",
+            true,
+            Promotion(
+                45.99,
+                5,
+                Cards(
+                    "mastercard",
+                    "visa"
+                )
+            ),
+            "21/02/23",
+            true,
+            true,
+            Owner(
+                "carlos",
+                "carlos Sueñolar"
+            ),
+            125,
+            4.9,
+            50.00,
+            "excelente colchón ,suavidad y confort.",
+            "13%",
+            0.00,
+            "villa crespo",
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lanerodelsud.com.ar%2Fproductos%2Fcolchon-belmo-espuma-alta-densidad-density-2%2F&psig=AOvVaw23QOcJ7ufuDSzxqU7uzsE1&ust=1690375780336000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPCwvdHyqYADFQAAAAAdAAAAABAI"
+        ),
+        Products(
+            18,
+            "acondicionador de aire",
+            "pilco",
+            130.00,
+            125.99,
+            "%19",
+            "$",
+            false,
+            Promotion(
+                44.99,
+                9,
+                Cards(
+                    "mastercard",
+                    "visa"
+                )
+            ),
+            "20/06/23",
+            true,
+            true,
+            Owner(
+                "ricardo",
+                "ricky ICE"
+            ),
+            129,
+            4.9,
+            50.00,
+            "frio calor de 3000 frigorias .",
+            "13%",
+            0.0,
+            "villa crespo",
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmonterosrl.com.ar%2Fproducto%2Fart-15161-aire-acondicionado-philco-3200w%2F&psig=AOvVaw0P6vsIKljUAp3PuJbn1m_L&ust=1690376185712000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKih-JL0qYADFQAAAAAdAAAAABAK"
+        ),
+        Products(19,
+            "stereo",
+            "pionner",
+            100.00,
+            95.99,
+            "%19",
+            "$",
+            true,
+            Promotion(
+                94.99,
+                8,
+                Cards(          "mastercard",
+                    "visa"
+                )      ),
+            "20/06/23",
+            true,
+            true,
+            Owner(
+                "alberto",
+            "music sound"
+        ),
+        129,
+        4.9,
+        50.00,
+        "stereo pionner con entrada usb,bluetooth .",
+        "13%",
+        70.00,
+        "villa crespo",
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fravega.com%2Fp%2Fstereo-para-auto-pioneer-bluetooth-usb-mp3-radio-am-fm-mvh-s215bt-20021412%2F&psig=AOvVaw1LgWU49nOeSpqwRT4IseZ3&ust=1690376457321000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjjipT1qYADFQAAAAAdAAAAABA"
+    )
+    )
 }
