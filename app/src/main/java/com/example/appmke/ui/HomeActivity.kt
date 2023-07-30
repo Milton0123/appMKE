@@ -14,9 +14,8 @@ import com.example.appmke.backend.ViewModelFactory
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
+    private lateinit var viewModel : MyViewModel
     private val myRepository = Repository()
-    private val viewModelFactory = ViewModelFactory(myRepository)
-    private val viewModel = ViewModelProvider(this, viewModelFactory).get(MyViewModel::class.java)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +26,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
 
-    fun action(){
+    private fun action(){
+        val viewModelFactory = ViewModelFactory(myRepository)
+        viewModel = ViewModelProvider(this, viewModelFactory).get(MyViewModel::class.java)
         initRecyclerView(viewModel.getMyListProduct())
         searchProduct()
     }
@@ -37,24 +38,23 @@ class HomeActivity : AppCompatActivity() {
         binding.rvProductsHome.adapter = adapter
     }
 
-    fun searchProduct(){
+    private fun searchProduct(){
         binding.svProductsHome.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
                 val newList = mutableListOf<Products>()
                 viewModel.getMyListProduct().forEach{
-                    if(it.name.contains(query!!)){
+                    if(it.description.lowercase().contains(newText!!.lowercase())){
                         newList.add(it)
                     }
                 }
                 initRecyclerView(newList)
                 return false
             }
-
-            override fun onQueryTextChange(newText: String?): Boolean {
-                return false
-            }
         })
     }
-
 
 }
